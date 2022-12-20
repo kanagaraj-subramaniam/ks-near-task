@@ -23,7 +23,7 @@ function Search() {
     return (
         <div className={`main ${focused && 'focus'}`}>
             <div className="input">
-                <img src={SearchIcon} className="search" />
+                <img src={SearchIcon} className="search" alt="search icon" />
                 <input type="text" name="search" onFocus={onFocus} onBlur={onBlur} onChange={ (e)=> handleChange(e)} placeholder="Search for anything" />
             </div>
             <div className="results">
@@ -35,7 +35,7 @@ function Search() {
                                 <p className="name">Shoes</p>
                             </div>
                             <div className="right">
-                                <p className="action">Select <img src={EnterIcon} /></p>
+                                <p className="action">Select <img src={EnterIcon} alt="enter icon" /></p>
                             </div>
                         </div>
                         <div className={`item i2 ${(focused && !results) && 'active'}`}>
@@ -43,7 +43,7 @@ function Search() {
                                 <p className="name">Sneakers</p>
                             </div>
                             <div className="right">
-                                <p className="action">Select <img src={EnterIcon} /></p>
+                                <p className="action">Select <img src={EnterIcon} alt="enter icon" /></p>
                             </div>
                         </div>
                     </div>
@@ -52,23 +52,23 @@ function Search() {
                         <div className={`item i1 selected ${(focused && results) && 'active'}`}>
                             <div className="left">
                                 <p className="name avt">
-                                    <img src={AvatarRaj} />
+                                    <img src={AvatarRaj} alt="avatar" />
                                     Kanagaraj Subramaniam
                                 </p>
                             </div>
                             <div className="right">
-                                <p className="action">Select <img src={EnterIcon} /></p>
+                                <p className="action">Select <img src={EnterIcon} alt="enter icon" /></p>
                             </div>
                         </div>
                         <div className={`item i2 ${(focused && results) && 'active'}`}>
                             <div className="left">
                                 <p className="name avt">
-                                    <img src={AvatarGowri} />
+                                    <img src={AvatarGowri} alt="avatar" />
                                     Gowri Shankar
                                 </p>
                             </div>
                             <div className="right">
-                                <p className="action">Select <img src={EnterIcon} /></p>
+                                <p className="action">Select <img src={EnterIcon} alt="enter icon" /></p>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ function Search() {
                                 </p>
                             </div>
                             <div className="right">
-                                <p className="action">Select <img src={EnterIcon} /></p>
+                                <p className="action">Select <img src={EnterIcon} alt="enter icon" /></p>
                             </div>
                         </div>
                         <div className={`item i2 ${(focused && results) && 'active'}`}>
@@ -93,7 +93,7 @@ function Search() {
                                 </p>
                             </div>
                             <div className="right">
-                                <p className="action">Select <img src={EnterIcon} /></p>
+                                <p className="action">Select <img src={EnterIcon} alt="enter icon" /></p>
                             </div>
                         </div>
                     </div>
